@@ -58,6 +58,6 @@ This page was created for learning, by the challenge of the [DevChallenges] (htt
 
 ## Contact
 
-- Website [brunoguerra.netlify.app](https://www.brunoguerra.netlify.app)
+- Website [brunoguerra.netlify.app](https://brunoguerra.netlify.app/)
 - GitHub [@brunorguerra](https://www.github.com/brunorguerra)
 - Instagram [@bruno.bernardees](https://www.instagram.com/bruno.bernardees/)
