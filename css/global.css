@@ -1,0 +1,43 @@
+:root {
+    --black: #333333;
+    --grey: #4F4F4F;
+    --white: #FFFFFF;
+    --footer: #BDBDBD;
+    --background: #F1F3F4;
+
+}
+html {
+    font-size: 62.5%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--background);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+}
+#container {
+    width: min(114rem, 90%);
+    margin: auto;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    white-space: nowrap;
+    border-width: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
