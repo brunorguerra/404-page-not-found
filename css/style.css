@@ -13,17 +13,12 @@ header h1 {
 /* Main */
 main {  
     grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
-    margin: 0 auto;
+    place-items: center;
     
-
-}
-main .content-container{
-    display: flex;
-    flex-flow: row nowrap;
-
-    align-items: center;
-    justify-content: space-between;
+    margin: 0 auto;
 }
 
 main .bg-img {
@@ -31,6 +26,7 @@ main .bg-img {
 }
 main .bg-img img {
     max-width: 54rem;
+    width: 100%;
 }
 
 main #content {
@@ -47,6 +43,8 @@ main #content p {
     font-size: 2.4rem;
     font-family: 'Space Mono', monospace;
     font-weight: 400;
+
+    max-width: 45rem;
 }
 main #content a {
     background: var(--black);
@@ -77,6 +75,7 @@ footer {
     padding: 9rem 0 4rem;
 }
 footer p {
+    text-align: center;
 
     color: var(--footer);
 
@@ -104,7 +103,22 @@ footer p > a:hover {
         "main"
         "footer";
     }
-    main .content-container {
-        flex-wrap: wrap;
+    main {
+        grid-template-columns: 1fr;
+    }
+    main .bg-img {
+        margin-right: 0;
+        margin-bottom: 4rem;
+    }
+}
+@media (max-width: 590px) {
+    main #content h2 {
+        font-size: 4rem;
+    }
+    main #content p {
+        font-size: 1.8rem;
+    }
+    main #content a {
+        padding: 2rem;
     }
 }
